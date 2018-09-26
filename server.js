@@ -4,6 +4,24 @@ let express = require("express");
 let bodyParser = require("body-parser");
 let path = require("path");
 
+let friends = [
+    {
+        "name":"Tim",
+        "photo":"",
+        "scores":[
+            5,
+            1,
+            4,
+            4,
+            5,
+            1,
+            2,
+            5,
+            4,
+            1
+          ]
+      }
+];
 
 
 
@@ -32,7 +50,7 @@ app.get("/api/friends", function (req, res) {
 app.post("/api/friends", function (req, res) {
     let answerArray = res.body;
     console.log(answerArray);
-
+    friends.push(answerArray);
     // ????
     res.json(answerArray);
 });
