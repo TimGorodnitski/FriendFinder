@@ -1,8 +1,13 @@
 // Dependencies
 // =============================================================
-var express = require("express");
-var bodyParser = require("body-parser");
-var path = require("path");
+let express = require("express");
+let bodyParser = require("body-parser");
+let path = require("path");
+
+
+
+
+
 
 // Sets up the Express App
 // =============================================================
@@ -18,4 +23,24 @@ app.use(bodyParser.json());
 
 app.listen(PORT, function () {
     console.log("App listening on PORT " + PORT);
+});
+
+app.get("/api/friends", function (req, res) {
+    return res.json(friends);
+});
+
+app.post("/api/friends", function (req, res) {
+    let answerArray = res.body;
+    console.log(answerArray);
+
+    // ????
+    res.json(answerArray);
+});
+
+app.get("/", function (req, res) {
+    res.sendFile(path.join(__dirname, "/public/home.html"));
+});
+
+app.get("/survey", function (req, res) {
+    res.sendFile(path.join(__dirname, "/public/survey.html"));
 });
