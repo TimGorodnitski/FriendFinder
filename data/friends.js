@@ -1,0 +1,2 @@
+let friends = [];
+let questions = [];
