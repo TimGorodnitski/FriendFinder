@@ -17,6 +17,4 @@ let friends = [
       }
 ];
 
-let questions = [
-    
-];
+module.exports = friends;
