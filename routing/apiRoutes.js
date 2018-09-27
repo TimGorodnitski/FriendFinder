@@ -12,7 +12,7 @@ module.exports = function (app) {
 
     app.post("/api/friends", function (req, res) {
         console.log(req.body);
-        let answerArray = req.body.scores;
+        let answerArray = req.body;
 
         friends.push(answerArray);
         // ????
