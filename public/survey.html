@@ -128,7 +128,7 @@
         </select>
 
         <div class="text-left">
-            <button type="submit" style="margin-top:20px"  class="btn btn-primary btn-md" id="submit"><span class="fa fa-fire"></span>Submit</button>
+            <button type="submit" style="margin-top:20px" class="btn btn-primary btn-md" id="submit"><span class="fa fa-fire"></span>Submit</button>
         </div>
 
 
@@ -155,8 +155,7 @@
                 </div>
                 <div class="modal-body">
                     <h2 id="match-name"></h2>
-                    <img id="match-img" src=""
-                        alt="">
+                    <img id="match-img" src="" alt="">
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -177,7 +176,7 @@
                 name: $("#name").val(),
                 photo: $("#photo").val(),
                 scores: [
-                    $("#q1").val(),
+                    Number($("#q1").val()),
                     $("#q2").val(),
                     $("#q3").val(),
                     $("#q4").val(),
@@ -191,8 +190,6 @@
             };
 
             // AJAX post the data to the friends API.
-
-
             $.post("/api/friends", newUserData, function (data) {
 
                 // Grab the result from the AJAX post so that the best match's name and photo are displayed.

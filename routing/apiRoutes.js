@@ -11,11 +11,13 @@ module.exports = function (app) {
     });
 
     app.post("/api/friends", function (req, res) {
-        console.log(req.body);
         let newUserData = req.body;
+        let parsedScores = req.body.scores.map(Number);
+
+        newUserData.scores = parsedScores;
 
         friends.push(newUserData);
-        // ????
+
         res.json(newUserData);
     });
 };
