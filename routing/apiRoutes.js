@@ -11,8 +11,9 @@ module.exports = function (app) {
     });
 
     app.post("/api/friends", function (req, res) {
-        let answerArray = res.body;
-        console.log(answerArray);
+        console.log(req.body);
+        let answerArray = req.body.scores;
+
         friends.push(answerArray);
         // ????
         res.json(answerArray);

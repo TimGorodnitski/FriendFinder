@@ -1,7 +1,7 @@
 let friends = [
     {
-        "name":"Ahmed",
-        "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        "name":"Stock Photo Dude",
+        "photo":"https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&h=350",
         "scores":[
             5,
             1,
@@ -14,6 +14,38 @@ let friends = [
             4,
             1
           ]
+      },
+      {
+        "name":"Satan",
+        "photo":"https://vignette.wikia.nocookie.net/southpark/images/d/db/Satan_2.png/revision/latest?cb=20180425122615",
+        "scores":[
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]  
+      },
+      {
+        "name":"Jesus",
+        "photo":"https://vignette.wikia.nocookie.net/southpark/images/b/bf/Jesus_Christ_transparent.PNG/revision/latest?cb=20161105035455",
+        "scores":[
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
+          ]  
       }
 ];
 
