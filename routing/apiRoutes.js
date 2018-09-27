@@ -12,10 +12,10 @@ module.exports = function (app) {
 
     app.post("/api/friends", function (req, res) {
         console.log(req.body);
-        let answerArray = req.body;
+        let newUserData = req.body;
 
-        friends.push(answerArray);
+        friends.push(newUserData);
         // ????
-        res.json(answerArray);
+        res.json(newUserData);
     });
 };
