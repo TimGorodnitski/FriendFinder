@@ -1,20 +1,4 @@
 let friends = [
-    {
-        "name":"Stock Photo Dude",
-        "photo":"https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&h=350",
-        "scores":[
-            5,
-            1,
-            4,
-            4,
-            5,
-            1,
-            2,
-            5,
-            4,
-            1
-          ]
-      },
       {
         "name":"Satan",
         "photo":"https://vignette.wikia.nocookie.net/southpark/images/d/db/Satan_2.png/revision/latest?cb=20180425122615",
