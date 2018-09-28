@@ -18,6 +18,20 @@ module.exports = function (app) {
 
         friends.push(newUserData);
 
-        res.json(newUserData);
+        let differences = [];
+
+        for (var x = 0; x < friends.length; x++) {
+
+            totalDifference = 0;
+
+            for (var y = 0; y < friends[x].scores.length; y++) {
+                totalDifference += Math.abs(newUserData.scores[y] - friends[x].scores[y]);
+            }
+
+            differences.push(totalDifference)
+        }
+        let match = differences.indexOf(Math.min(...differences));
+
+        res.json(friends[match]);
     });
 };
